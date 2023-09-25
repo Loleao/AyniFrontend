@@ -72,22 +72,144 @@
   ],
   "products": [
     {
-      "name": "Papas",
-      "description": "Papas haradas durante bastante tiempo",
-      "unit_price": 1.50,
-      "image_url": "https://primefaces.org/cdn/primevue/images/product/bamboo-watch.jpg"
+      "id": 1,
+      "name": "Papa",
+      "description": "Papas frescas y deliciosas, perfectas para todo tipo de platos.",
+      "unitPrice": 2.99,
+      "imageUrl": "https://example.com/papa.jpg"
     },
     {
-      "name": "Cerezos",
-      "description": "Cereza recontra roja",
-      "unit_price": 2.50,
-      "image_url": "https://primefaces.org/cdn/primevue/images/product/bamboo-watch.jpg"
+      "id": 2,
+      "name": "Tomate",
+      "description": "Tomates maduros y jugosos, ideales para ensaladas y salsas.",
+      "unitPrice": 1.49,
+      "imageUrl": "https://example.com/tomate.jpg"
     },
     {
-      "name": "Arroz",
-      "description": "Arroz bien plantado",
-      "unit_price": 1.50,
-      "image_url": "https://primefaces.org/cdn/primevue/images/product/bamboo-watch.jpg"
+      "id": 3,
+      "name": "Zanahoria",
+      "description": "Zanahorias frescas y crujientes, perfectas como snack o para cocinar.",
+      "unitPrice": 0.99,
+      "imageUrl": "https://example.com/zanahoria.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Lechuga",
+      "description": "Lechuga verde y fresca, ideal para ensaladas saludables.",
+      "unitPrice": 1.29,
+      "imageUrl": "https://example.com/lechuga.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Cebolla",
+      "description": "Cebollas dulces y aromáticas, esenciales en muchas recetas.",
+      "unitPrice": 0.79,
+      "imageUrl": "https://example.com/cebolla.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Pimiento",
+      "description": "Pimientos rojos y verdes frescos, ideales para guisos y asados.",
+      "unitPrice": 1.99,
+      "imageUrl": "https://example.com/pimiento.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Espinaca",
+      "description": "Espinacas tiernas y nutritivas, perfectas para platos saludables.",
+      "unitPrice": 1.79,
+      "imageUrl": "https://example.com/espinaca.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Calabacín",
+      "description": "Calabacines frescos y versátiles, excelentes para asar o saltear.",
+      "unitPrice": 1.69,
+      "imageUrl": "https://example.com/calabacin.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Brócoli",
+      "description": "Brócoli fresco y saludable, lleno de nutrientes.",
+      "unitPrice": 2.49,
+      "imageUrl": "https://example.com/brocoli.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Perejil",
+      "description": "Perejil fresco y aromático, perfecto para condimentar platos.",
+      "unitPrice": 0.89,
+      "imageUrl": "https://example.com/perejil.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Col rizada",
+      "description": "Col rizada fresca y rica en nutrientes, ideal para batidos verdes.",
+      "unitPrice": 1.59,
+      "imageUrl": "https://example.com/col_rizada.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Ajo",
+      "description": "Ajo fresco y aromático, esencial en la cocina internacional.",
+      "unitPrice": 0.69,
+      "imageUrl": "https://example.com/ajo.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Remolacha",
+      "description": "Remolachas frescas y dulces, ideales para ensaladas y conservas.",
+      "unitPrice": 1.29,
+      "imageUrl": "https://example.com/remolacha.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Echalote",
+      "description": "Echalotes frescos y sabrosos, perfectos para salsas y guisos.",
+      "unitPrice": 1.99,
+      "imageUrl": "https://example.com/echalote.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Apio",
+      "description": "Apio fresco y crujiente, ideal para ensaladas y bocadillos.",
+      "unitPrice": 0.99,
+      "imageUrl": "https://example.com/apio.jpg"
+    },
+    {
+      "id": 16,
+      "name": "Pepino",
+      "description": "Pepinos frescos y refrescantes, perfectos para ensaladas y snacks.",
+      "unitPrice": 0.79,
+      "imageUrl": "https://example.com/pepino.jpg"
+    },
+    {
+      "id": 17,
+      "name": "Albahaca",
+      "description": "Albahaca fresca y aromática, esencial en la cocina italiana.",
+      "unitPrice": 1.49,
+      "imageUrl": "https://example.com/albahaca.jpg"
+    },
+    {
+      "id": 18,
+      "name": "Estragón",
+      "description": "Estragón fresco y con sabor anisado, perfecto para condimentar platos.",
+      "unitPrice": 1.29,
+      "imageUrl": "https://example.com/estragon.jpg"
+    },
+    {
+      "id": 19,
+      "name": "Hinojo",
+      "description": "Hinojo fresco y crujiente, ideal para ensaladas y asados.",
+      "unitPrice": 1.69,
+      "imageUrl": "https://example.com/hinojo.jpg"
+    },
+    {
+      "id": 20,
+      "name": "Espinaca Baby",
+      "description": "Espinacas tiernas y pequeñas, perfectas para ensaladas frescas.",
+      "unitPrice": 1.79,
+      "imageUrl": "https://example.com/espinaca_baby.jpg"
     }
   ],
   "activities": [

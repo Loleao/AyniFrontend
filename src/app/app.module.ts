@@ -50,20 +50,17 @@ import { SignUpComponent } from './Authentication/components/sign-up/sign-up.com
 
 // Angular Material Components
 import {MatToolbarModule} from "@angular/material/toolbar";
-import {MatIconModule} from "@angular/material/icon";
-import {MatMenuModule, MatMenuTrigger} from "@angular/material/menu";
-import {MatButtonModule} from "@angular/material/button";
-import {ReactiveFormsModule} from "@angular/forms";
-import {MatFormFieldModule} from "@angular/material/form-field";
-import {MatInputModule} from "@angular/material/input";
-import {MatCardModule} from "@angular/material/card";
 import {MatListModule} from "@angular/material/list";
 import { SelectRolComponent } from './Authentication/components/select-rol/select-rol.component';
 import { FarmerMainContentComponent } from './Authentication/components/home/farmer-home/components/farmer-main-content/farmer-main-content.component';
 import { MerchantMainContentComponent } from './Authentication/components/home/merchant-home/components/merchant-main-content/merchant-main-content.component';
-import {HttpClientModule} from "@angular/common/http";
-import {MatTableModule} from "@angular/material/table";
 import {MatSidenavModule} from "@angular/material/sidenav";
+import { ProductCardComponent } from './Shopping/products/components/product-card/product-card.component';
+import { ProductsContentComponent } from './Shopping/products/pages/products-content/products-content.component';
+import {MatPaginatorModule} from "@angular/material/paginator";
+import {MatGridListModule} from "@angular/material/grid-list";
+import { ProductDetailsContentComponent } from './Shopping/products/pages/product-details-content/product-details-content.component';
+import {ProductsService} from "./Shopping/products/services/products.service";
 @NgModule({
   declarations: [
     AppComponent,
@@ -93,13 +90,16 @@ import {MatSidenavModule} from "@angular/material/sidenav";
     Button3ContentComponent,
     TableBillContentComponent,
     Button4ContentComponent,
-    Dialog2ContentComponent
+    Dialog2ContentComponent,
+    ProductCardComponent,
+    ProductsContentComponent,
+    ProductDetailsContentComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatToolbarModule, 
+    MatToolbarModule,
     MatMenuModule,
     MatListModule,
     MatSidenavModule,
@@ -117,14 +117,16 @@ import {MatSidenavModule} from "@angular/material/sidenav";
     MatIconModule,
     MatDialogModule,
     NgOptimizedImage,
-    ReactiveFormsModule
+    ReactiveFormsModule,
     MatDividerModule,
     MatSelectModule,
     MatRadioModule,
     MatTableModule,
-    MatMenuModule
+    MatMenuModule,
+    MatPaginatorModule,
+    MatGridListModule
   ],
-  providers: [SalesService],
+  providers: [SalesService, ProductsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

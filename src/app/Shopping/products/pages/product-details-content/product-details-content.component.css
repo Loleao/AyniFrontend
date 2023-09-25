@@ -1,0 +1,42 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  column-gap: 1rem;
+  justify-content: space-around;
+  padding: 1.5rem 3.5rem;
+}
+.product-information {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-right: 1.5rem;
+}
+
+.product-title {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: white;
+}
+.product-details {
+  background-color: #212121;
+  color: white;
+  padding: 1.5rem;
+  width: 100%;
+}
+.img {
+  height: 200px;
+  padding: 1rem;
+}
+
+.buttons {
+  display: flex;
+  padding: 0.75rem 0;
+  column-gap: 1.5rem;
+  justify-content: center;
+}
+
+.mat-mdc-raised-button.mat-primary {
+  --mdc-protected-button-container-color: #3EAF2C;
+  --mdc-protected-button-label-text-color: #fff;
+ padding: 1.5rem;
+}

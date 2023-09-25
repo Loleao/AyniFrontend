@@ -1,8 +1,9 @@
 import {HttpClient, HttpErrorResponse, HttpHeaders} from "@angular/common/http";
 import {catchError, Observable, pipe, retry, throwError} from "rxjs";
+import {environment} from "../../../environments/environment.development";
 
 export class BaseService<T> {
-  basePath: string = 'http://localhost:3000/api/v1';
+  basePath: string = `${environment.serverBasePath}`;
   resourceEndpoint: string ='/resources';
 
   httpOptions = {
@@ -44,6 +45,11 @@ export class BaseService<T> {
   getAll(): Observable<T> {
     return this.http.get<T>(this.resourcePath(), this.httpOptions)
       .pipe(retry(2), catchError(this.handleError));
+  }
+
+  getById(id:number): Observable<T> {
+    return this.http.get<T>(`${this.resourcePath()}/${id}`, this.httpOptions)
+        .pipe(retry(2), catchError(this.handleError));
   }
 
   private resourcePath():string{

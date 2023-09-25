@@ -9,6 +9,10 @@ import {
 } from "./Authentication/components/home/farmer-home/components/farmer-main-content/farmer-main-content.component";
 import {SalesStepperContentComponent} from "./Shopping/sales/components/stepper-content/stepper-content.component";
 import {TableCostContentComponent} from "./Finance/components/table-cost-content/table-cost-content.component";
+import {ProductsContentComponent} from "./Shopping/products/pages/products-content/products-content.component";
+import {
+  ProductDetailsContentComponent
+} from "./Shopping/products/pages/product-details-content/product-details-content.component";
 
 const routes: Routes = [
   { path: '', redirectTo: 'signin', pathMatch: 'full' },
@@ -17,9 +21,11 @@ const routes: Routes = [
   { path: 'select-rol', component: SelectRolComponent},
   { path: 'merchant-home', component: MerchantMainContentComponent},
   { path: 'farmer-home', component: FarmerMainContentComponent },
-  { path: '**', redirectTo: 'signin', pathMatch: 'full'  },
   { path: 'sales', component: SalesStepperContentComponent },
-  {path: 'costList', component: TableCostContentComponent }
+  { path: 'products', component: ProductsContentComponent },
+  { path: 'products/details/:id', component: ProductDetailsContentComponent },
+  {path: 'costList', component: TableCostContentComponent },
+  { path: '**', redirectTo: 'signin', pathMatch: 'full'  },
 ];
 
 @NgModule({

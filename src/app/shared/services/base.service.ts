@@ -1,10 +1,9 @@
 import {HttpClient, HttpErrorResponse, HttpHeaders} from "@angular/common/http";
 import {catchError, Observable, pipe, retry, throwError} from "rxjs";
-import {environment} from "../../../environments/environment";
 
 export class BaseService<T> {
-  basePath:string=`${environment.serverBasePath}`;
-  resourceEndpoint:string='/resources';
+  basePath: string = 'http://localhost:3000/api/v1';
+  resourceEndpoint: string ='/resources';
 
   httpOptions = {
     headers: new HttpHeaders({
